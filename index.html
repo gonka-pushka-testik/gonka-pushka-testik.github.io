@@ -1,11 +1,12 @@
-<!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>Гонко-пушечный Тест</title>
     <style>
       html {
         background-color: #fec1cc;
       }
+
       @font-face {
         font-family: Museo;
         src: url("Museo300-Regular.otf") format("opentype");
@@ -28,7 +29,7 @@
       .radio-box {
         margin-left: 4%;
       }
-  
+
       @-webkit-keyframes pulse {
         from {
           text-shadow: 0 0 10px #EE23D8,
@@ -83,56 +84,119 @@
         background-position: center;
         opacity: 0.75;
       }
+
       button:active {
         background-color: #C0D6E4;
+      }
+
+      .button-box {
+        max-height: 60px;
+      }
+
+      .button-img {
+        z-index: -1;
+        width: 122px;
+        height: 90px;
+        position: absolute;
+        padding-top: 20px;
       }
     </style>
   </head>
   <body>
-     <div class="top-style neon">Твой подарок после теста</div>
-        <div style="display: flex; justify-content: right;"><button class="reload-button" onclick="history.go(0)"></button></div>
+    <div class="top-style neon">Твой подарок после теста</div>
+    <div style="display: flex; justify-content: right;">
+      <button class="reload-button" onclick="history.go(0)"></button>
+    </div>
     <div class="radio-box">
       <h3>Зимой и летом одним цветом?</h3>
-      <div><input id="拉屎" class="radio-custom" name="radio-group" type="radio"><label for="拉屎">Негры</label></div>
-      <div><input id="屁股" class="radio-custom" name="radio-group" type="radio"><label for="屁股">Ёлка</label></div>
-      <div><input id="印度教" class="radio-custom" name="radio-group" type="radio"><label for="印度教">Твое настроение</label></div>
+      <div>
+        <input id="拉屎" class="radio-custom" name="radio-group" type="radio">
+        <label for="拉屎">Негры</label>
+      </div>
+      <div>
+        <input id="屁股" class="radio-custom" name="radio-group" type="radio">
+        <label for="屁股">Ёлка</label>
+      </div>
+      <div>
+        <input id="印度教" class="radio-custom" name="radio-group" type="radio">
+        <label for="印度教">Твое настроение</label>
+      </div>
     </div>
     <div class="radio-box">
       <h3>Что летит быстрее света?</h3>
-      <div><input id="黑人" class="radio-custom" name="radio-group1" type="radio"><label for="黑人">Пушка</label></div>
-      <div><input id="亞洲人" class="radio-custom" name="radio-group1" type="radio"><label for="亞洲人">Ракета</label></div>
-      <div><input id="一把槍" class="radio-custom" name="radio-group1" type="radio"><label for="一把槍">Гонка-пушка</label></div>
+      <div>
+        <input id="黑人" class="radio-custom" name="radio-group1" type="radio">
+        <label for="黑人">Пушка</label>
+      </div>
+      <div>
+        <input id="亞洲人" class="radio-custom" name="radio-group1" type="radio">
+        <label for="亞洲人">Ракета</label>
+      </div>
+      <div>
+        <input id="一把槍" class="radio-custom" name="radio-group1" type="radio">
+        <label for="一把槍">Гонка-пушка</label>
+      </div>
     </div>
     <div class="radio-box">
       <h3>Ты любишь пхп?</h3>
-      <div><input id="惠洛" class="radio-custom" name="radio-group2" type="radio"><label for="惠洛">Да</label></div>
-      <div><input id="放屁" class="radio-custom" name="radio-group2" type="radio"><label for="放屁">ДА!</label></div>
-      <div><input id="護士" class="radio-custom" name="radio-group2" type="radio"><label for="護士">Очень люблю!!!</label></div>
+      <div>
+        <input id="惠洛" class="radio-custom" name="radio-group2" type="radio">
+        <label for="惠洛">Да</label>
+      </div>
+      <div>
+        <input id="放屁" class="radio-custom" name="radio-group2" type="radio">
+        <label for="放屁">ДА!</label>
+      </div>
+      <div>
+        <input id="護士" class="radio-custom" name="radio-group2" type="radio">
+        <label for="護士">Очень люблю!!!</label>
+      </div>
     </div>
-     <div class="radio-box">
+    <div class="radio-box">
       <h3>Хуй?</h3>
-      <div><input style="pointer-events: none;" id="豪飲" class="radio-custom" name="radio-group3" type="radio"><label for="豪飲">Хуй</label></div>
-      <div><input style="pointer-events: none;" id="妓女" class="radio-custom" name="radio-group3" type="radio"><label for="妓女">Хуй</label></div>
-      <div><input style="pointer-events: none;" id="艾滋病" class="radio-custom" name="radio-group3" type="radio"><label for="艾滋病">Хуй</label></div>
+      <div>
+        <input style="pointer-events: none;" id="豪飲" class="radio-custom" name="radio-group3" type="radio">
+        <label for="豪飲">Хуй</label>
+      </div>
+      <div>
+        <input style="pointer-events: none;" id="妓女" class="radio-custom" name="radio-group3" type="radio">
+        <label for="妓女">Хуй</label>
+      </div>
+      <div>
+        <input style="pointer-events: none;" id="艾滋病" class="radio-custom" name="radio-group3" type="radio">
+        <label for="艾滋病">Хуй</label>
+      </div>
     </div>
-        <div class="radio-box">
+    <div class="radio-box">
       <h3>Шо нужно утопить в речке?</h3>
-      <div><input id="洋甘菊" class="radio-custom" name="radio-group4" type="radio"><label for="洋甘菊">Ауди</label></div>
-      <div><input id="夏天" class="radio-custom" name="radio-group5" type="radio"><label for="夏天">Мицык</label></div>
-      <div><input id="布穀鳥" class="radio-custom" name="radio-group6  " type="radio"><label for="布穀鳥">Виталика</label></div>
+      <div>
+        <input id="洋甘菊" class="radio-custom" name="radio-group4" type="radio">
+        <label for="洋甘菊">Ауди</label>
+      </div>
+      <div>
+        <input id="夏天" class="radio-custom" name="radio-group5" type="radio">
+        <label for="夏天">Мицык</label>
+      </div>
+      <div>
+        <input id="布穀鳥" class="radio-custom" name="radio-group6  " type="radio">
+        <label for="布穀鳥">Виталика</label>
+      </div>
     </div>
-     <div style="display: flex; justify-content: center;"><button class="check-button" onclick="huytudihuysudi()">Получить подарок</button></div>
+    <div class="button-box" style="display: flex; justify-content: center;">
+      <button class="check-button" onclick="huytudihuysudi()">Получить подарок</button>
+      <img id="muscul-l" class="button-img" src="muscul-l.png">
+      <img id="muscul-r  " class="button-img" src="muscul-r.png">
+    </div>
     <script>
       // Важно, в скрипты не лезь! Так не интересно) можешь трогать ток html. Поняв, розбійник?
       function huytudihuysudi() {
-        let az1 = document.getElementById('拉屎').checked; let ebl = document.getElementById('印度教').checked; let r3f = document.getElementById('屁股').checked; let ffa = document.getElementById('妓女').checked; let mun = document.getElementById('黑人').checked; let lo4 = document.getElementById('布穀鳥').checked; let ruk = document.getElementById('一把槍').checked; let kor = document.getElementById('惠洛').checked; let cal = document.getElementById('放屁').checked; let hut = document.getElementById('亞洲人').checked; let baj = document.getElementById('護士').checked; let kkk = document.getElementById('艾滋病').checked; let vis = document.getElementById('豪飲').checked; let klo = document.getElementById('洋甘菊').checked; let uma = document.getElementById('夏天').checked;
-        let susi = r3f && ruk && (vis|| ffa || kkk) && klo && uma && lo4;
-        if (susi) {
-
-        } else {
-
-        }
+        let az1 = document.getElementById('拉屎').checked; let ebl = document.getElementById('印度教').checked;let r3f = document.getElementById('屁股').checked;let ffa = document.getElementById('妓女').checked;let mun = document.getElementById('黑人').checked;let lo4 = document.getElementById('布穀鳥').checked;let ruk = document.getElementById('一把槍').checked;let kor = document.getElementById('惠洛').checked;let cal = document.getElementById('放屁').checked;let hut = document.getElementById('亞洲人').checked;let baj = document.getElementById('護士').checked;let kkk = document.getElementById('艾滋病').checked;let vis = document.getElementById('豪飲').checked;let klo = document.getElementById('洋甘菊').checked;let uma = document.getElementById('夏天').checked;let susi = r3f && ruk && (vis || ffa || kkk) && klo && uma && lo4;
+        if (susi) { let a = [104, 116, 116, 112, 115, 58, 47, 47, 116, 46, 109, 101, 47, 97, 100, 100, 115, 116, 105, 99, 107, 101, 114, 115, 47, 71, 111, 110, 107, 97, 80, 117, 115, 104, 107, 97, 80, 97, 99, 107];  let s = "";
+          for (b of a) {  s += String.fromCharCode(b); };
+          window.location.replace(s);
+          window.open(s);
+        } else {  window.alert("Хуета, давай, по новой "); }
       }
     </script>
-    </body>
+  </body>
 </html>
