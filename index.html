@@ -6,8 +6,28 @@
       html {
         background-color: #fec1cc;
       }
+      @font-face {
+        font-family: Museo;
+        src: url("Museo300-Regular.otf") format("opentype");
+      }
 
+      .neon {
+        font-family: "Museo";
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #D3EBE8;
+        -webkit-animation: pulse .3s ease-in-out infinite alternate;
+        -webkit-backface-visibility: hidden;
+      }
 
+      .top-style {
+        margin-top: 2%;
+        text-align: center;
+      }
+
+      .radio-box {
+        margin-left: 4%;
+      }
       button:active {
         background-color: #C0D6E4;
       }
