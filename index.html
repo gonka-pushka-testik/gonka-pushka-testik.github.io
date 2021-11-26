@@ -28,12 +28,67 @@
       .radio-box {
         margin-left: 4%;
       }
+  
+      @-webkit-keyframes pulse {
+        from {
+          text-shadow: 0 0 10px #EE23D8,
+            0 0 20px #EE23D8,
+            0 0 30px #EE23D8,
+            0 0 40px #EE236D,
+            0 0 70px #EE236D,
+            0 0 80px #EE236D,
+            0 0 100px #EE236D,
+            0 0 150px #EE236D;
+        }
+
+        to {
+          text-shadow: 0 0 5px #EE23D8,
+            0 0 10px #EE23D8,
+            0 0 15px #EE23D8,
+            0 0 20px #EE236D,
+            0 0 35px #EE236D,
+            0 0 40px #EE236D,
+            0 0 50px #EE236D,
+            0 0 75px #EE236D;
+        }
+      }
+
+      .check-button {
+        width: 300px;
+        height: 60px;
+        background-color: #C6E2FF;
+        border: black 2.3;
+        border-radius: 10px;
+        margin: 3% 0;
+        font-family: Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+
+      .reload-button {
+        width: 60px;
+        height: 60px;
+        background-color: orange;
+        border: black 2.3;
+        border-radius: 30px;
+        margin: 0 6%;
+        font-family: Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: 2px;
+        background-image: url(reload.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        opacity: 0.75;
+      }
       button:active {
         background-color: #C0D6E4;
       }
     </style>
   </head>
   <body>
-
+     <div class="top-style neon">Твой подарок после теста</div>
     </body>
 </html>
